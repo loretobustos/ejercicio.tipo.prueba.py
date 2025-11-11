@@ -49,9 +49,19 @@ class Consulta(Paciente):
     def contarFonasaIsapre(self,lista):
         pass
         # usar dos contadores
-
+#####estudiar solo los ejercicios de una herencia y no doble. por que las doble herencia no entran en la prueba
+    
     def nominaMedicoPorEspecialida(self,lista):
-        pass
+        #buscando las especialidades
+        listaEspecialidadees=[]
+        for item in lista:
+            if not item.medico.especialidad in listaEspecialidades:
+                listaEspecialidades.append(item.medico.especialidad)
+        #print(listaEspecialidades)
+        for itemEspecialidad in listaEspecialidades:
+            print("- Especialidad de: ",itemEspecialidad)
+            for item in lista:     
 
     
     
+
