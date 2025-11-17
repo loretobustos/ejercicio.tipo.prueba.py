@@ -45,12 +45,22 @@ class Consulta(Paciente):
     def consultaPagoBajoPagoAlto(self,lista):
         pass
         # usar lista auxiliar y después métodos max y min
+
+    
     
     def contarFonasaIsapre(self,lista):
         pass
         # usar dos contadores
 #####estudiar solo los ejercicios de una herencia y no doble. por que las doble herencia no entran en la prueba
-    
+     def listasistemaSlud(self, lista):
+        for itemSistema in ['Fonasa', 'Isapre']:
+            print("Los/as pacientes en ", itemSistema, " son: ")
+            for item in lista:
+                if itemSistema.upper()==item.sistemaSalud.upper():
+                    print(" - ",item.nombre)
+
+
+
     def nominaMedicoPorEspecialida(self,lista):
         #buscando las especialidades
         listaEspecialidadees=[]
@@ -64,4 +74,5 @@ class Consulta(Paciente):
 
     
     
+
 
